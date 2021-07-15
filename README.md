@@ -6,5 +6,8 @@ It should be a top-down view like Stardew Valley and not a sidescroller, platfor
 There should be a player character that is able to walk and interact with the game world.
 Features required: Talking to the shopkeeper, buying/selling items, item icons, item prices as well as equipping the bought outfits. The outfits that are equipped should be visible on the character itself.
 
+
+
 Art pack "Pixel Art Top Down" by Cainos.
+
 MyBox package from here: https://github.com/Deadcows/MyBox
