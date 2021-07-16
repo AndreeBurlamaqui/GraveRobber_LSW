@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc1dec4b19ab5e46b89671528439fe8, type: 3}
+  m_Name: GhostMerchantLines
+  m_EditorClassIdentifier: 
+  npcName: Ghost Hatter
+  greetingsLines:
+  - "Heyo, Digger! What ya need? Do ya have something for me this time?!\r"
+  - "Heyo, Digger! What ya want? It could seem that I have all day long, but, ya
+    know, the sun is coming soon, so... I don't. Could you be a little faster this
+    time?\r"
+  - Heyo, Digger! I know that I don't have so much stuffs to sell, but hey, ya must
+    to admit that my hats are something out of this world.
+  - "Heyo Digger! What ya buying? Don't ya dare to say that you're saving your economies
+    to me!\r"
+  buyingLines:
+  - Aah yeah! That's what I'm saying!
+  - Aah yeah! Give me, give me it!
+  - Uuuh... This never gets old.
+  sellingLines:
+  - Okay. I guess I can keep it to, maybe, sell to another digger, ya know?
+  - Eeh... Not so useful, but, okay, for ya I can keep it.

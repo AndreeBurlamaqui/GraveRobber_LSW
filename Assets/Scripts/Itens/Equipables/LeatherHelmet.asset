@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Leather Helmet
   itemSprite: {fileID: 21300000, guid: 5ff9b869a12e70b4db7a137f84ed920b, type: 3}
+  itemPriceToBuy: 5
+  itemPriceToSell: 3
   itemRarity: 1
   isEquipable: 1
-  price: 0
+  equipableClipUp: {fileID: 7400000, guid: f567555d015d6554f9f7c08b11cd116b, type: 2}
+  equipableClipDown: {fileID: 7400000, guid: a844fed01fe04214495cf2d4d7f3dec9, type: 2}
+  equipableClipLeft: {fileID: 7400000, guid: 76ed0f5a7e6b53c42813073fe1ea0bc2, type: 2}
+  equipableClipRight: {fileID: 7400000, guid: 237d08001d4441f4ab9ce6fcc672b5b0, type: 2}

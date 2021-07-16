@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PrototypeCemetery.unity
+    guid: fd7d3098db22c1147b5c08f0b561ac84
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: fda157fcd94c7fa47af9748f047c3036,
       type: 2}
