@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IDiggable
+interface IDiggable
 {
-    public bool hasBeenDug { get; set; }
-    public int hatLuck { get; set; }
+    bool hasBeenDug { get; set; }
+    int hatLuck { get; set; }
 }

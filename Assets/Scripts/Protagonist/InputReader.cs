@@ -23,7 +23,7 @@ public class InputReader : ScriptableObject, CharacterControls.IGameplayActions
 	private Vector2 targetMousePosTest;
 
     #region Enable and Disable Inputs
-    private void OnEnable()
+    public void OnEnable()
 	{
 		if (characterControls == null)
 		{
@@ -33,7 +33,7 @@ public class InputReader : ScriptableObject, CharacterControls.IGameplayActions
 		EnableGameplayInput();
 	}
 
-	private void OnDisable()
+	public void OnDisable()
 	{
 		DisableAllInput();
 	}

@@ -10,20 +10,20 @@ public class NPC_Merchant : MonoBehaviour, IInteractable
     [SerializeField] private float signAnimDuration, textTypeDelay;
     [SerializeField] private GameObject interactCanvas;
     [SerializeField] private TextMeshProUGUI dialogueText, nameText;
-    bool isNegotiating = false;
+    bool isNegotiating = false, isTalking = false;
     private InventoryManager iM;
     public IEnumerator HideInteractable()
     {
-        ResetStore();
+        if(isNegotiating)
+            ResetStore();
 
 
-        if (interactableSign.color.a > 0)
-        {
+        
             float journey = 1;
             Color newAlpha = interactableSign.color;
             while (journey >= 0)
             {
-                journey -= Time.deltaTime;
+                journey -= Time.deltaTime * 2;
 
                 newAlpha.a = Mathf.Clamp01(journey);
                 interactableSign.color = newAlpha;
@@ -31,7 +31,7 @@ public class NPC_Merchant : MonoBehaviour, IInteractable
                 yield return null;
             }
 
-        }
+        
     }
 
     public void OnInteract()
@@ -61,6 +61,7 @@ public class NPC_Merchant : MonoBehaviour, IInteractable
 
     IEnumerator TypeDialogue()
     {
+        isTalking = true;
         for (int x = 0; x < dialogueText.text.Length; x++)
         {
             dialogueText.maxVisibleCharacters = x + 1;
@@ -69,6 +70,7 @@ public class NPC_Merchant : MonoBehaviour, IInteractable
             yield return new WaitForSeconds(textTypeDelay);
 
         }
+        isTalking = false;
     }
 
     public IEnumerator ShowInteractable()
@@ -95,8 +97,11 @@ public class NPC_Merchant : MonoBehaviour, IInteractable
     /// </summary>
     public void SayBuyingLine()
     {
-        dialogueText.text = npcLines.buyingLines[Random.Range(0, npcLines.buyingLines.Length)];
-        StartCoroutine(TypeDialogue());
+        if (!isTalking)
+        {
+            dialogueText.text = npcLines.buyingLines[Random.Range(0, npcLines.buyingLines.Length)];
+            StartCoroutine(TypeDialogue());
+        }
     }
 
     /// <summary>
@@ -104,7 +109,10 @@ public class NPC_Merchant : MonoBehaviour, IInteractable
     /// </summary>
     public void SaySellingLine()
     {
-        dialogueText.text = npcLines.sellingLines[Random.Range(0, npcLines.sellingLines.Length)];
-        StartCoroutine(TypeDialogue());
+        if (!isTalking)
+        {
+            dialogueText.text = npcLines.sellingLines[Random.Range(0, npcLines.sellingLines.Length)];
+            StartCoroutine(TypeDialogue());
+        }
     }
 }

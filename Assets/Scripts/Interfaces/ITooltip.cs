@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ITooltip 
+interface ITooltip 
 {
-    public bool isBeenSeen { get; set; }
-    public void OnMouseEnter();
-    public void OnMouseExit();
+    bool isBeenSeen { get; set; }
+    void OnMouseEnter();
+    void OnMouseExit();
 }

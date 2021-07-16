@@ -132,7 +132,7 @@ public class Tombstone : MonoBehaviour, IInteractable, IDiggable
             Color newAlpha = interactableSign.color;
             while (journey >= 0)
             {
-                journey -= Time.deltaTime;
+                journey -= Time.deltaTime * 2;
 
                 newAlpha.a = Mathf.Clamp01(journey);
                 interactableSign.color = newAlpha;

@@ -36,7 +36,8 @@ public class TopDownCharacterController : MonoBehaviour
 
     private void OnEnable()
     {
-        //inputReader.onMoveEvent += vectorValue => movementDirection = vectorValue;
+        inputReader.OnEnable();
+
         inputReader.onMoveEvent += Move;
         inputReader.onInteractEvent += StartInteract;
         inputReader.onDigEvent += ctx => IsHoldingDig = ctx;
@@ -44,7 +45,8 @@ public class TopDownCharacterController : MonoBehaviour
 
     private void OnDisable()
     {
-        //inputReader.onMoveEvent -= vectorValue => movementDirection = vectorValue;
+        inputReader.OnDisable();
+
         inputReader.onMoveEvent -= Move;
         inputReader.onInteractEvent -= StartInteract;
         inputReader.onDigEvent -= ctx => IsHoldingDig = ctx;

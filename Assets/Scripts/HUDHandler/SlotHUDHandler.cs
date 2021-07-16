@@ -58,7 +58,7 @@ public class SlotHUDHandler : MonoBehaviour, IPointerClickHandler, IPointerEnter
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (iM.isUnderNegotiation) //show price to sell
+        if (priceTooltip.activeInHierarchy) //show price to sell
         {
             priceTooltip.SetActive(false);
 
