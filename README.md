@@ -13,6 +13,6 @@ Features required: Talking to the shopkeeper, buying/selling items, item icons, 
 
 --------
 
-Art pack "Pixel Art Top Down" by Cainos.
-
-MyBox package from here: https://github.com/Deadcows/MyBox
+PDF (GDD, Thought process, arts used, packages used): https://drive.google.com/file/d/1L-aQeXMfTMOIrWcvG2D6NjvEIXpDN1nL/view?usp=sharing
+Video demo: https://drive.google.com/file/d/1F0MEyy8j9gZVaQntuqUd97rGQeWb2uY9/view?usp=sharing
+Builds: https://drive.google.com/file/d/1F0MEyy8j9gZVaQntuqUd97rGQeWb2uY9/view?usp=sharing
