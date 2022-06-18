@@ -15,6 +15,9 @@ Features required: Talking to the shopkeeper, buying/selling items, item icons, 
 
 PDF (GDD, Thought process, arts used, packages used): https://drive.google.com/file/d/1L-aQeXMfTMOIrWcvG2D6NjvEIXpDN1nL/view?usp=sharing
 
-Video demo: https://drive.google.com/file/d/1F0MEyy8j9gZVaQntuqUd97rGQeWb2uY9/view?usp=sharing
-
 Builds: https://drive.google.com/file/d/1F0MEyy8j9gZVaQntuqUd97rGQeWb2uY9/view?usp=sharing
+
+
+
+https://user-images.githubusercontent.com/87104166/174416542-d6a0df60-a020-43ae-9d3f-1cb330f7cf82.mp4
+
